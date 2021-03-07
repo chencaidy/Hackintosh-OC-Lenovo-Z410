@@ -18,6 +18,7 @@
 * WiFi正常，免驱
 * 蓝牙正常，支持接力
 * 触摸板正常，多指操作正常
+* 键盘正常，支持音量亮度调节
 * USB端口正常，去除无效端口，端口属性正确修正
 * EC（SMC）正常，支持电量报告
 * CPU电源管理正常，支持功率报告
@@ -28,9 +29,17 @@
 * 盒盖休眠无效
 
 ## BIOS配置（版本：8DCN40WW）
+* 高级菜单破解：BIOS定制
+* 关闭CFG锁：BIOS定制
+* TSC同步补丁：BIOS定制
+* 恢复出厂设置：`Exit` > `Other OS` > `Load Default Settings`
+* 开启VT-x：`Configuration` > `Intel Virtual Technology` > `Enabled`
+* 预分配显存64M：`Advanced` > `Video Configuration` > `Internal Graphic Device` > `IGD - DVMT Pre-Allocated` > `64 MB`
+* 关闭VT-d：`Advanced` > `Chipset Configuration` > `VT-d` > `Disabled`
 
 ## 更新日志
 ### 2021-3-7
+* 支持按键亮度调节
 * 修复睡眠唤醒后自动重启
 * 修复睡眠自动唤醒
 ### 2021-3-6
