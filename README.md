@@ -13,7 +13,7 @@
 ## 特性
 * 仿冒机型：MacBookPro11,4（SN已去除，需自行补充）
 * 系统版本：Big Sur 11.2.2
-* 显示正常，显卡FB：0A260005，VRAM：1536MB，端口限制：2（去除不存在的0204端口防止开机卡顿）
+* 显示正常，显卡FB：0D260007，VRAM：1536MB，端口限制：2（去除不存在的0204和0306端口防止开机卡顿）
 * 内置扬声器正常，耳机输出正常，声卡ID：51
 * WiFi正常，免驱
 * 蓝牙正常，支持接力
@@ -24,9 +24,7 @@
 * CPU电源管理正常，支持功率报告
 * 电池睡眠正常，适配器供电睡眠正常
 * 电源按钮正常，短按1S休眠，长按>3S弹出关机对话框
-
-## 已知问题
-* 盒盖休眠无效
+* 合盖休眠正常
 
 ## BIOS配置（版本：8DCN40WW）
 * 高级菜单破解：BIOS定制
@@ -34,10 +32,13 @@
 * TSC同步补丁：BIOS定制
 * 恢复出厂设置：`Exit` > `Other OS` > `Load Default Settings`
 * 开启VT-x：`Configuration` > `Intel Virtual Technology` > `Enabled`
-* 预分配显存64M：`Advanced` > `Video Configuration` > `Internal Graphic Device` > `IGD - DVMT Pre-Allocated` > `64 MB`
+* 预分配显存64M：`Advanced` > `Video Configuration` > `Internal Graphic Device` > `IGD - DVMT Pre-Allocated` > `128 MB`
 * 关闭VT-d：`Advanced` > `Chipset Configuration` > `VT-d` > `Disabled`
 
 ## 更新日志
+### 2021-3-12
+* 修复合盖休眠功能
+* 更改显卡FB到0D260007，解决部分页面花屏，需设置128MB预分配显存
 ### 2021-3-8
 * 修复电源按钮功能
 * 注入LPC
