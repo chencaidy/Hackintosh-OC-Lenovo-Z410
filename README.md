@@ -1,6 +1,7 @@
 # Hackintosh-OC-Lenovo-Z410
 
 ## 平台配置
+
 * 平台：Lenovo Z410
 * CPU：Intel Core i7-4870HQ (Crystal Well)
 * iGPU：Intel Iris Pro Graphics 5200
@@ -11,6 +12,7 @@
 * 内存：16GB
 
 ## 特性
+
 * 仿冒机型：MacBookPro11,4（SN已去除，需自行补充）
 * 系统版本：Big Sur 11.2.2
 * 显示正常，显卡FB：0D260007，VRAM：1536MB，端口限制：2（去除不存在的0204和0306端口防止开机卡顿）
@@ -27,6 +29,7 @@
 * 合盖休眠正常
 
 ## BIOS配置（版本：8DCN40WW）
+
 * 高级菜单破解：BIOS定制
 * 关闭CFG锁：BIOS定制
 * TSC同步补丁：BIOS定制
@@ -36,15 +39,34 @@
 * 关闭VT-d：`Advanced` > `Chipset Configuration` > `VT-d` > `Disabled`
 
 ## 更新日志
+
+### 2021-5-23
+
+* 更新OpenCore 0.6.9
+* 更新AppleALC 1.6.0
+* 更新RealtekRTL8111 2.4.2
+* 更新Lilu 1.5.3
+* 更新VoodooPS2 2.2.3
+* 更新VirtualSMC 1.2.3
+* 启用开机音效
+* 启用图形化UI界面
+
 ### 2021-3-12
+
 * 修复合盖休眠功能
 * 更改显卡FB到0D260007，解决部分页面花屏，需设置128MB预分配显存
+
 ### 2021-3-8
+
 * 修复电源按钮功能
 * 注入LPC
+
 ### 2021-3-7
+
 * 支持按键亮度调节
 * 修复睡眠唤醒后自动重启
 * 修复睡眠自动唤醒
+
 ### 2021-3-6
+
 * 更新OpenCore 0.6.7
