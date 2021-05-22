@@ -6,7 +6,7 @@
 * CPU：Intel Core i7-4870HQ (Crystal Well)
 * iGPU：Intel Iris Pro Graphics 5200
 * dGPU：NVIDIA GT740M（已屏蔽）
-* 网卡：Apple BCM94360CS2
+* 网卡：Dell DW1820A
 * 触摸板：Synaptics TM2132
 * 显示屏：LTN140HL02
 * 内存：16GB
@@ -14,10 +14,10 @@
 ## 特性
 
 * 仿冒机型：MacBookPro11,4（SN已去除，需自行补充）
-* 系统版本：Big Sur 11.2.2
+* 系统版本：Big Sur 11.3.1
 * 显示正常，显卡FB：0D260007，VRAM：1536MB，端口限制：2（去除不存在的0204和0306端口防止开机卡顿）
 * 内置扬声器正常，耳机输出正常，声卡ID：51
-* WiFi正常，免驱
+* WiFi正常，地区#a
 * 蓝牙正常，支持接力
 * 触摸板正常，多指操作正常
 * 键盘正常，支持音量亮度调节
@@ -50,6 +50,7 @@
 * 更新VirtualSMC 1.2.3
 * 启用开机音效
 * 启用图形化UI界面
+* 更换网卡为DW1820A
 
 ### 2021-3-12
 
