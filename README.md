@@ -35,10 +35,13 @@
 * TSC同步补丁：BIOS定制
 * 恢复出厂设置：`Exit` > `Other OS` > `Load Default Settings`
 * 开启VT-x：`Configuration` > `Intel Virtual Technology` > `Enabled`
-* 预分配显存64M：`Advanced` > `Video Configuration` > `Internal Graphic Device` > `IGD - DVMT Pre-Allocated` > `128 MB`
+* 预分配显存128M：`Advanced` > `Video Configuration` > `Internal Graphic Device` > `IGD - DVMT Pre-Allocated` > `128 MB`
 * 关闭VT-d：`Advanced` > `Chipset Configuration` > `VT-d` > `Disabled`
 
 ## 更新日志
+
+### 2021-5-24
+* 增加BIOS补丁教程
 
 ### 2021-5-23
 
