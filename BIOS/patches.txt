@@ -1,0 +1,45 @@
+# Patch string format
+# FileGuid SectionType PatchType:FindPatternOrOffset:ReplacePattern 
+# Please ensure that the latest symbol in patch string is space
+
+# Possible section types:
+#  PE32 image                    10
+#  Position-independent code     11
+#  TE Image                      12
+#  DXE Dependency                13
+#  Version information           14
+#  User interface string         15
+#  16-bit code                   16
+#  Guided freeform               18
+#  Raw data                      19
+#  PEI Dependency                1B
+#  SMM Dependency                1C
+# Please do not try another section types, it can make the resulting image broken
+
+# Possible patch types:
+#  P - pattern-based, first parameter is a pattern to find, second - a pattern to replace
+#  O - offset-based, first parameter is hexadecimal offset, second - a pattern to replace
+# Patterns can have . as "any possible value" symbol
+
+#----------------------------------------------------------------------------------
+# OSX CPU Power Management patches
+# Remove lock from MSR 0xE2 register
+#----------------------------------------------------------------------------------
+
+# L05ODMServiceFunctions | Add BCM94360CS2 to whitelist (Liteon HB125 is replaced)
+1620BFB3-96CC-4DD7-8EB3-DEBEC24CBB5C 10 P:8C163200AA171831:E414A0436B101701 
+
+# L05ODMServiceFunctions | Add DW1820A (CN_08PKF4) to whitelist (BCM94313HMG2L is replaced)
+1620BFB3-96CC-4DD7-8EB3-DEBEC24CBB5C 10 P:E4142747E4140906:E414A34328102300 
+
+# L05ODMServiceFunctions | Add AX200 to whitelist (Intel Wireless-N 7260 is replaced)
+1620BFB3-96CC-4DD7-8EB3-DEBEC24CBB5C 10 P:8680B20886806242:8680232786808400 
+
+# SetupUtility | Unlock BIOS advanced menus
+FE3542FE-C1D3-4EF8-657C-8048606FF670 10 P:745FB8040000004C3BE074554983FC02744F0FB64249488D:9090B8040000004C3BE090904983FC0290900FB64249488D 
+
+# PowerMgmtDxe | Unlock Haswell MSR (Fixed kernel panic in Hackintosh)
+F7731B4C-58A2-4DF4-8980-5645D39ECE58 10 P:75080FBAE80F89442430:EB080FBAE80F89442430 
+
+# Bds | Fixed Lenovo-Z410 TSC unsynchronized
+A6F691AC-31C8-4444-854C-E2C1A6950F92 10 P:4883C4405FC3CCCCCCCCCCCCCC488BC248C1EA200F30:4883C4405FC3CCCCCCCCCCCCCC488BC248C1EA209090 
