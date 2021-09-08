@@ -40,6 +40,18 @@
 
 ## 更新日志
 
+### 2021-9-8
+
+* 更新OpenCore 0.7.3
+* 更新AirportBrcmFixup 2.1.3
+* 更新AppleALC 1.6.4
+* 更新BrcmPatchRAM 2.6.0
+* 更新BrightnessKey 1.0.2
+* 更新Lilu 1.5.6
+* 更新VirtualSMC 1.2.7
+* 更新VoodooPS2 2.2.5
+* 更新WhateverGreen 1.5.3
+
 ### 2021-5-24
 * 增加BIOS补丁教程
 
