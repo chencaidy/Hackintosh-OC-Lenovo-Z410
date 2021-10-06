@@ -14,7 +14,7 @@
 ## 特性
 
 * 仿冒机型：MacBookPro11,4（SN已去除，需自行补充）
-* 系统版本：Big Sur 11.3.1
+* 系统版本：Big Sur 11.6
 * 显示正常，显卡FB：0D260007，VRAM：1536MB，端口限制：2（去除不存在的0204和0306端口防止开机卡顿）
 * 内置扬声器正常，耳机输出正常，声卡ID：51
 * WiFi正常，地区#a
@@ -39,6 +39,13 @@
 * 关闭VT-d：`Advanced` > `Chipset Configuration` > `VT-d` > `Disabled`
 
 ## 更新日志
+
+### 2021-10-6
+
+* 更新OpenCore 0.7.4
+* 更新AppleALC 1.6.5
+* 更新VoodooPS2 2.2.6
+* 更新WhateverGreen 1.5.4
 
 ### 2021-9-8
 
